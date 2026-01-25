@@ -117,6 +117,7 @@
             const dataURL = canvas.toDataURL('image/png', 0.9);
             
             // Create download link
+            // Not useful if no content is to be downloaded
             const link = document.createElement('a');
             link.download = logo.filename;
             link.href = dataURL;
