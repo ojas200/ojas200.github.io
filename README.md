@@ -28,4 +28,4 @@ Based on [Jon Barron's website](https://github.com/jonbarron/jonbarron_website).
 
 ---
 
-*Built for CMU MRSD portfolio*
+*Built for JHU MSE Robotics portfolio*
