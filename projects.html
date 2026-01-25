@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Projects - Sreeharsha Paruchuri</title>
-    <meta name="author" content="Sreeharsha Paruchuri">
+    <title>Projects - Ojas Taskar</title>
+    <meta name="author" content="Ojas Taskar">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favi.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <!--Check if blogs section works by clicking-->
     <!-- Navigation Bar -->
     <div class="nav-container">
       <nav class="navbar">
@@ -19,7 +20,6 @@
         <a href="index.html#projects" class="nav-link">Projects</a>
         <a href="index.html#education" class="nav-link">Education</a>
         <a href="index.html#teaching" class="nav-link">Teaching</a>
-        <a href="quotes.html" class="nav-link">Photography</a>
         <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
       </nav>
     </div>
@@ -31,33 +31,33 @@
           <!-- Page Header -->
           <div style="text-align: center; margin: 32px 0 16px 0;">
             <h1 style="font-size: 32px; font-weight: 400; margin-bottom: 6px;">Additional Projects</h1>
-            <p style="color: #666; font-size: 16px; margin: 0;">Exploring diverse areas of robotics, AI, and computer vision</p>
+            <p style="color: #666; font-size: 16px; margin: 0;">A deep dive into some areas of robotics & computer vision </p>
           </div>
 
           <!-- Projects Section -->
           <table style="width:100%;border:0px;border-spacing:0px 8px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr style="background-color: var(--highlight-bg);">
+            <!--tr style="background-color: var(--highlight-bg);"-->
               <td style="padding:12px;width:40%;vertical-align:middle">
-                <img src="images/projects/autonomy.gif" alt="VSLAM Project" class="project-image">
+                <img src="images/projects/cnn_eval.png" alt="CNN Eval Proj" class="project-image">
               </td>
               <td style="padding:6px;width:60%;vertical-align:middle">
                 <div class="duration-container">
                   <div class="section-title-container">
-                    <strong class="section-title">Pixel Art with Stamps using a Franka Robot</strong>
+                    <strong class="section-title">Multi-label Multi-object Classification</strong>
                   </div>
                 </div>
-                <em>Motion Planning</em><br>
-                <a href="https://drive.google.com/file/d/18UWXH2ysmpVf5kuKNUX5fA8yX9ORaGiH/view?usp=sharing">report</a> / <a href="https://github.com/sreeharshaparuchur1/pixel-art-franka">code</a><br>
-                A robotic system that transforms any input image into pixel art through sequential stamping! Images are decomposed into grids, stamping paths are optimized for minimal travel, and force control enables reliable execution.
+                <em>Deep Learning</em><br>
+                <a href="https://github.com/ojas200/cnn_classification_evaluation/blob/main/ojas_submission.pdf">report</a> / <a href="https://github.com/ojas200/cnn_classification_evaluation/blob/main/model_and_analysis.ipynb">code</a><br>
+                An evaluation study to determine <strong>simplest</strong> data and model-centric approaches for shape & colour classification in images. The objective was develop a minimalistic pipeline, engineering every last bit from pure hyperparameter tuning and training strategies, capable of robust classification. 
                 <div class="experience-toggle" style="margin-top: 6px;">
-                  <a href="#" onclick="toggleExperience('vslam'); return false;" id="vslam-toggle">View Details</a>
+                  <a href="#" onclick="toggleExperience('cnneval'); return false;" id="cnneval-toggle">View Details</a>
                 </div>
-                <div id="vslam-details" class="experience-details">
+                <div id="cnneval-details" class="experience-details">
                   <div class="key-contributions">
-                    • Motion planning with Christofides’ algorithm for travel-minimizing stamping order<br>
-                    • Force-controlled manipulation for consistent stamping under variable surface conditions<br>
-                    • ArUco-based perception and calibration to localize and switch between ink pads dynamically
+                    • <strong>Training strategies: </strong>Experimented the effect of <strong>Canny Edge pre-processing, CNN model depth, loss functions, data augmentation</strong> on validation loss, pipeline stability and training time.<br>
+                    • <strong>Hyperparameter tuning: </strong>Fine-tuned fully-connected and convolutional layers to find optimal point of <strong>depth</strong> and <strong>precision</strong>.<br>
+                    • <strong>Label-free mapping: </strong>Deployed an empirical spectral mapping for color recognition without explicit labelling. Achieved <strong>95% accuracy</strong> on entire dataset.<br>
                   </div>
                 </div>
               </td>
@@ -66,24 +66,27 @@
 
             <tr>
               <td style="padding:12px;width:40%;vertical-align:middle">
-                <img src='images/projects/oakd.png' class="project-image">
+                <img src='images/projects/drone.png' class="project-image">
               </td>
               <td style="padding:6px;width:60%;vertical-align:middle">
                 <div class="duration-container">
                   <div class="section-title-container">
-                    <strong class="section-title">Neural-Assisted Depth Disparity Estimation</strong>
+                    <strong class="section-title">Swarm Area Search using Chaos-Based Secure Communication</strong>
                   </div>
                   <!-- <div class="duration-tag">Hackathon</div> -->
                 </div>
-                <a href="#">project demo</a> / <a href="#">code</a><br>
-                Developed a coarse-to-fine stereo matching network for the OAK-D Pro that enhanced real-world disparity estimation quality while sustaining real-time inference on embedded hardware. Ranked among the Top 25 teams internationally.
+                <em>Bachelor's Degree Thesis</em><br>
+                <a href="https://livejohnshopkins-my.sharepoint.com/:w:/r/personal/otaskar1_jh_edu/Documents/FYP-Swarm%20(1).docx?d=w4ecba277d0ab46b7bd795a24a924d160&csf=1&web=1&e=7WcAbB">report</a><br>
+                Designed a C++ based central system for decentralised path planning for a hetereogenous drone swarm (varying search radii and onboard capacities), with a custom chaotic systems-backed encryption network for inter-system communication. 
                 <div class="experience-toggle" style="margin-top: 6px;">
-                  <a href="#" onclick="toggleExperience('neural-depth'); return false;" id="neural-depth-toggle">View Details</a>
+                  <a href="#" onclick="toggleExperience('fyp-swarm'); return false;" id="fyp-swarm--toggle">View Details</a>
                 </div>
-                <div id="neural-depth-details" class="experience-details">
+                <div id="fyp-swarm-details" class="experience-details">
                   <div class="key-contributions">
-                    • <strong>Coarse-to-Fine Architecture:</strong> Designed a multi-scale refinement pipeline for disparity maps, achieving ~1.7 px EPE and 8% D1-all error on real-world scenes<br>
-                    • <strong>Real-time Optimization:</strong> Integrated ONNX Runtime with quantization and operator fusion to fit the OAK-D Pro’s compute budget, sustaining 25–30 FPS onboard<br>
+                    • <strong>Search radius-aware path planning: </strong>Developed a C++ based central control system, with dynamic <strong>Voronoi cell</strong> generation for search-radius aware path planning, with 57% trial accuracy in collision test-case verification.<br>
+                    • <strong>Optimized planning algorithm: </strong>Deployed a traveling-salesman problem for modelling planning, <strong>adding HK optimization</strong> for 15% improvement in collision cases and reduced <strong>search area overlap.</strong><br>
+                    • <strong>Chaotic system encryption: </strong>Designed a <strong>Rossler</strong> chaotic system for two-way keyed secure modulation, with random number generated demodulation keys. Tested system against <strong>penetration</strong> and <strong>man-in-the-middle</strong> attacks to verify security.<br>
+                    • <strong>Test drone development: </strong>Built a small (~2.5lbs) drone using Pixhawk 2.4.8 from the ground up, selected electronic speed controllers (ESCs), motor capacity, propeller radius and battery based on flight time requirements and desired range of operation.<br>
                   </div>
                 </div>
                 
